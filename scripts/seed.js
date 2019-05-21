@@ -1,17 +1,17 @@
 'use strict'
 
 const db = require('../server/db')
-const {Square, Circle} = require('../server/db/models')
-const squareData = require('./squareData')
-const circleData = require('./circleData')
+const {Vet, Pet} = require('../server/db/models')
+const vetData = require('./vetData')
+const petData = require('./petData')
 
 
 async function seed() {
   await db.sync({force: true})
   console.log('db synced!')
 
-  await Square.bulkCreate(squareData)
-  await Circle.bulkCreate(circleData)
+  await Vet.bulkCreate(vetData)
+  await Pet.bulkCreate(petData)
 
   console.log(`seeded successfully`)
 }
