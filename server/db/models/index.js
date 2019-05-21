@@ -1,9 +1,9 @@
-const Square = require('./square')
-const Circle = require('./circle')
+const Pet = require('./pet')
+const Vet = require('./vet')
 
 // add relationships here
 
 module.exports = {
-  Square,
-  Circle,
+  Pet,
+  Vet,
 }
