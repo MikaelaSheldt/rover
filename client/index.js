@@ -8,7 +8,11 @@ import store from './store'
 import App from './AppContainer'
 
 ReactDOM.render(
-  <App />,
+  <Provider store={store}>
+      <Router history={history}>
+        <App />
+      </Router>
+  </Provider>,
   document.getElementById('app')
 )
 
