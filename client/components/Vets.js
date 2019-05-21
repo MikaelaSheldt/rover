@@ -17,7 +17,6 @@ export class Vets extends Component {
     const vets = this.props.vets
     return (
       <main>
-        <AddCampus />
         <ul>
           {vets.map(vet => {
             return (

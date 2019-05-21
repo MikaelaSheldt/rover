@@ -6,9 +6,9 @@ import vet from './vet'
 import circle from './circle'
 
 const reducer = combineReducers({vet, circle})
-const middleware = composeWithDevTools(
-  applyMiddleware(thunkMiddleware, createLogger({collapsed: true}))
-)
-const store = createStore(reducer, middleware)
+// const middleware = composeWithDevTools(
+//   applyMiddleware(thunkMiddleware, createLogger({collapsed: true}))
+// )
+const store = createStore(reducer)
 
 export default store

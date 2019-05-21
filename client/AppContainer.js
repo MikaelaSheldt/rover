@@ -1,11 +1,11 @@
 import React from 'react'
 
+import Vets from "./components/Vets"
+
 const App = () => {
   return(
     <div>
-      <h1>
-        I'm a component container.
-      </h1>
+      <Vets />
     </div>
   )
 }
