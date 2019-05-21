@@ -10,8 +10,9 @@ async function seed() {
   await db.sync({force: true})
   console.log('db synced!')
 
-  await Vet.bulkCreate(vetData)
   await Pet.bulkCreate(petData)
+  await Vet.bulkCreate(vetData)
+
 
   console.log(`seeded successfully`)
 }
