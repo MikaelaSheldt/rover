@@ -1,6 +1,6 @@
-# monolith 
-
-Boilerplate for basic web-application.
-Uses combined redux-reducers, relational DB, react, and express. 
-Square, Circle, and Triangle are just dummy representations fo types of data
-Delete non-essential stuff
+# rover
+-  createdb rover
+-  define pet, vet models, define relationships
+-  seed database
+-  add vet forms
+-  get all vets

@@ -1,14 +1,16 @@
 const Sequelize = require('sequelize')
 const db = require('../db')
 
-const Circle = db.define('circle', {
-  information: {
+const Vet = db.define('vet', {
+  profile: {
     type: Sequelize.TEXT,
-    allowNull: false
+  },
+  email: {
+    type: Sequelize.STRING
   },
   picture: {
     type: Sequelize.STRING
   }
 })
 
-module.exports = Circle
+module.exports = Vet

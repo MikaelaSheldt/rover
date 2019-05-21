@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const db = require('../db')
 
-const Square = db.define('square', {
+const Pet = db.define('pet', {
   information: {
     type: Sequelize.TEXT,
     allowNull: false
@@ -11,4 +11,4 @@ const Square = db.define('square', {
   }
 })
 
-module.exports = Square
+module.exports = Pet
